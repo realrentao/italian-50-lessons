@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>意大利语入门 50 篇 · 短文学习</title>
+<meta name="description" content="意大利语入门 50 篇短文学习站：中意对照、edge-tts 真人发音三档语速、生词表、语法要点、练习与参考答案。">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'><rect width='1' height='2' x='0' fill='%23009246'/><rect width='1' height='2' x='1' fill='%23f1f2f1'/><rect width='1' height='2' x='2' fill='%23ce2b37'/></svg>">
+</head>
+<body data-view="both">
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <h1><span class="flag"></span> 意大利语入门 50 篇</h1>
+      <p>50 Letture d'italiano · A1–A2</p>
+    </div>
+    <div class="progress-wrap">
+      <span id="progText">学习进度 0 / 50</span>
+      <div class="progress-bar"><i id="progBar" style="width:0"></i></div>
+    </div>
+    <div class="search">
+      <input id="search" type="search" placeholder="搜索标题 / 生词 / 语法…" autocomplete="off">
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="iconbtn menubtn" id="menuBtn">☰</button>
+      <span class="crumb" id="crumb">目录</span>
+      <span class="spacer"></span>
+      <div class="seg" id="viewSeg" title="对照显示方式">
+        <button data-view="both" class="on">对照</button>
+        <button data-view="it">意语</button>
+        <button data-view="cn">中文</button>
+      </div>
+      <button class="iconbtn" id="themeBtn" title="切换主题">◐</button>
+    </header>
+    <main id="app"></main>
+  </div>
+</div>
+
+<audio id="audio" preload="none"></audio>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
